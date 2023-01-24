@@ -1,0 +1,18 @@
+color theory
+
+red - energy ,love, intensity
+blue - sarenity(culmness),trust,stability
+green - fresh,safety, growth
+yellow - joy , intelect , attention
+purple - royality, feminity, wealthy
+
+combinig color
+
+get two color right next to each on color wheel - Analogous colors 
+ex - navigation bars and body of the websit , logo and its background
+
+get colors from opposite end of the color wheel - complementary colors
+this combine make pop of each color
+should not use with text color and background color
+
+

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,300;1,100;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,100;1,200;1,500;1,600&display=swap');
+:root {
+    --body-font: "Poppins", sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+  }
+    *,::before,::after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        font-weight: 300;
+        list-style: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        color: #000;
+        justify-content: center;
+    
+    }
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff;
+
+    
+ }
+
+
+header{
+    position:fixed;
+    min-height: 100hv;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 10px 20px;
+    transition: .3s;
+}
+
+.logo img{
+    max-width: 100;
+    height: auto;
+}
+ul{
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+
+}
+
+.navigation li{
+    display: block;
+    padding: 10px 10px 10px 30px;
+    /*font-family: 'Poppins', sans-serif;*/
+    float: left;
+
+
+}
+.navigation li:hover{
+   
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+      -webkit-background-clip: text,padding-box;
+      background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+.navigation li:hover{
+    --_p: 100%;
+    --_s: .3s;
+}
+@media screen and(max-width:767px) {
+    .navigation a{
+    
+        position: relative;
+        list-style-type: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+        margin: 10px;
+        padding: 10px ;
+        
+     
+        
+    }
+}
+
+
+
+
+
+#menu-icon{
+    font-size: 20px;
+    color: #372948;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 100px 18%;
+}
+.home{
+    min-height: (100vh-3rem);
+    row-gap: 1rem;
+}
+.home{
+    height: 100%;
+    width: 100%;
+   
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem;
+    grid-template-areas:
+        ". my-img"
+        ". .";
+}
+.Intro-text{
+    padding: 40% 0 20% 0 ;
+    position: relative;
+    top: 0px; left: 40px;
+    
+}
+@media (min-width:796px) {
+    .my-img{
+        object-fit: cover;
+        margin-left: 40%;
+        grid-area: my-img;
+        max-width: 100%;
+        width: 300%;
+        height: auto;
+    
+}
+}
+ 
+#text-1{
+    animation: blinker 6s linear infinite;
+}
+@keyframes blinker{
+    70%{
+        opacity: .2
+    }
+}
+.home-data{
+    align-self: center;
+}
+.Intro-text {
+    margin: 10px 0px 25px;
+    font-size:var(--big-font-size) ;
+    font-family: var(--body-font);
+    line-height: 4rem;
+    
+}
+h2{
+    font-weight: 800;
+}
+.title-color{
+    color: #e8f407;
+    font-weight: 800;
+   
+}
+#text-1{
+    font-weight: 800;
+}
+
+.social a{
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    /*justify-content: center;*/
+    background: #fffb00 ;
+    font-size: 17px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+.social a:hover{
+    background: rgb(183, 125, 24);
+    transform: scale(1.1);
+    transition: 2s;
+}
+#btn1{
+    padding: 10px;
+    margin-top: 25px;
+}
+button{
+    background-image: linear-gradient(144deg,#ff9640, #f3c442 50%,#d4eb00);
+    border: 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 120px;
+    color: white;
+    padding: 15px 19px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    line-height: 1em;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: inline;font-size: 16px;
+    margin: 4px 2px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+button:active,button:hover{
+    outline: 0;
+
+}
+/*button span{
+    background-color: rgb(229, 146, 14);
+    padding: 10px 24px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}*/
+button:hover span{
+    background:none;
+}
+@media (min-width:768px) {
+    .button{
+        font-size: 24px;
+        min-width: 196px;
+    }
+    
+}
