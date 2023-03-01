@@ -55,6 +55,12 @@ window.addEventListener("scroll", () =>{
 
   /*about*/
   animation.reveal(".about-title",{});
-  animation.reveal(".about-img",{delay:400});
-  animation.reveal(".about-text",{delay:400});
+  animation.reveal(".about-img",{delay:100});
+  animation.reveal(".about-text",{delay:100});
+  animation.reveal(".skill-container",{delay:100});
+
+  /*project*/
+  animation.reveal(".project-title",{});
   
+
+ 
