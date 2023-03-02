@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,400;1,200;1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
-    
+
   <!--Load Bootstrap css-->
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
   <!--load font awesome-->
@@ -25,7 +25,7 @@
           <ul class="ul-nav" id="nav-ul">
             
             <li class="nav-item">
-              <a href="#home" class="nav-link active">Home</a>
+              <a href="#home" class="active">Home</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
@@ -36,15 +36,23 @@
             <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
             </li>
-           <!-- <li class="nav-item">
-              <a href="#" onclick="myFunction()"><img src="pictures/dark.png" alt="dark mode" height="20px" width="20px" style="background-color: transparent;"></a>
-            </li>-->
+            <a href="javascript:void(0)" class="icon" onclick="toggleFunction()">
+              <i class="fa fa-bars"></i></a>
+           
           </ul>
         </div>
-        <div class="toggle-menu" id="toggle">
-          <i class="bx-bx-menu"></i>
-        </div>
+        
       </nav>
+      <script>
+        function toggleFunction(){
+          var x = document.getElementById("nav-id");
+          if(x.className === "nav-bar"){
+            x.className += "responsive";
+          }else{
+            x.className = "nav-bar";
+          }
+        }
+      </script>
 
 
   </header>  

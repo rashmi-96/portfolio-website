@@ -49,7 +49,7 @@ window.addEventListener("scroll", () =>{
   });
 /*home page*/
   animation.reveal(".Intro-text",{});
-  animation.reveal(".button",{delay:200});
+  animation.reveal(".button",{delay:100});
   animation.reveal(".social-conatiner",{delay:100});
   animation.reveal(".home-image",{interval:200});
 

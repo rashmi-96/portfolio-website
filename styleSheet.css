@@ -24,10 +24,7 @@ body{
 
     
  }
-.dark-mode{
-    background-color: #000;
-    color: #ffffff;
-}
+
 #headerID{
    
   position: fixed;
@@ -38,10 +35,13 @@ body{
    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.16);
    
 }
+.nav-bar{
+    overflow: hidden;
+}
 
 ul{
    position: fixed;
-   /* top: 0; */
+   top: 0;
    width: 100%;
    padding: 0;
    margin: 0;
@@ -76,15 +76,38 @@ li{
     border-radius: 25px;
     margin-top: 5px;
 }
-.active::after{
-    
-    background-color: #fff;
+.nav-bar a.active {
+    background-color: #ffdd1a;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 5px;
+    color: black;
+  }
+
+.nav-bar .icon{
+    display: none;
+}
+@media screen  and (min-width:600px){
+    .nav-bar a:not(:first-child){display: none;}
+    .nav-bar a .icon{
+        float: right;
+        display: block;
+    }
     
 }
-.toggle-menu{
-    color: #ff9640;
-    cursor: pointer;
-    font-size: 24px;
+@media  screen and (min-width:600px) {
+    .nav-bar .responsive{position: relative;}
+    .nav-bar .responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-bar .responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
 }
 
 /*show nav bar*/
@@ -155,7 +178,7 @@ section{
    
 }
 
-@media screen and(min-width:h768px){
+@media screen and (min-width:h768px){
     .Intro-text{
         max-width: 100%;
     }
@@ -246,7 +269,7 @@ button:active,button:hover{
 button:hover span{
     background:none;
 }
-@media (min-width:768px) {
+@media scree and (min-width:768px) {
     .button{
         font-size: 24px;
         min-width: 50px;
@@ -276,7 +299,7 @@ button:hover span{
     
 
 }
-@media  screen and(min-width:768px) {
+@media  screen and (min-width:768px) {
     .about-title::after{
         width: 80%;
         top: 3rem;
@@ -453,7 +476,7 @@ input[type=text]{
     border: #fff;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);;
 }
-@media screen and(min-width:768px) {
+@media screen and (max-width:768px) {
     .contact-form{
         max-width: 50%;
     }
@@ -472,7 +495,7 @@ input[type=text]{
 }
 /*Media Quaries*/
 
-@media screen and(max-width:768px){
+@media screen and (max-width:768px){
     body{
         margin: 0;
         height: auto;
@@ -482,20 +505,7 @@ input[type=text]{
         position: relative;
         z-index: 0;
     }
-    .nav{
-        height: calc(48px + 16px);
-    }
-    .ul-nav{
-        display: flex;
-        padding-top: 0;
-    }
-    .nav-item{
-        margin-left: 64px;
-        margin-bottom: 0;
-    }
-    .toggle-menu{
-        display: none;
-    }
+  
     .home{
         display:grid;
         grid-template-columns: 1fr;
@@ -541,4 +551,24 @@ input[type=text]{
     #set-1{
         background-color: #f3c442;
     }
+    .project-section{
+        margin: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+    .project-container{
+        padding:50px 35px ;
+        /*width: 100px;*/
+    }
+    .project-img{
+        width: 200%;
+        padding:10px;
+    }
+    .project-btns{
+        display: block;
+        font-size: 11px;
+        padding: 5px 15px;
+    }
+
 }
