@@ -217,8 +217,10 @@ section{
     line-height: 4rem;
     
 }
-h2{
+h2, .h2 {
+    font-size: 35px;
     font-weight: 800;
+    line-height: 5rem;
 }
 .title-color{
     color: #e8f407;
@@ -230,8 +232,9 @@ h2{
 }
 
 #btn1{
-    padding: 10px;
+    padding: 2px 0;
     margin-top: 25px;
+    font-size: 16px;
 }
 button{
     background-image: linear-gradient(144deg,#ff9640, #f3c442 50%,#d4eb00);
@@ -325,7 +328,16 @@ button:hover span{
 }
 
 /*skill section*/
-
+.skill-container {
+    background-color: #EC9704;
+    text-align-last: center;
+}
+.skill-container h3{
+    font-size: 20px;
+    font-style: italic;
+    color: #000;
+    font-weight: 500;
+}
 table{
     width: 70%;
     background-color: #EC9704;
@@ -359,7 +371,7 @@ td{
     height: 40px;
 
 }
-table:hover{
+.skill-container:hover{
     width: 300px;
     height: 300px;
 }
