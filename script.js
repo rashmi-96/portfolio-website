@@ -49,7 +49,7 @@ window.addEventListener("scroll", () =>{
   });
 /*home page*/
   animation.reveal(".Intro-text",{});
-  animation.reveal(".button",{delay:100});
+  animation.reveal(".button-resume",{delay:100});
   animation.reveal(".social-conatiner",{delay:100});
   animation.reveal(".home-image",{interval:200});
 
@@ -57,7 +57,7 @@ window.addEventListener("scroll", () =>{
   animation.reveal(".about-title",{});
   animation.reveal(".about-img",{delay:100});
   animation.reveal(".about-text",{delay:100});
-  animation.reveal(".skill-container",{delay:100});
+  /*animation.reveal(".skill-container",{delay:100});*/
 
   /*project*/
   animation.reveal(".project-title",{});

@@ -53,7 +53,12 @@ li{
     
     float: left;
 }
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--body-font);
 
+}
 /*navigation bar*/
 .nav-item{
   
@@ -221,7 +226,7 @@ section{
     margin-top: 25px;
     font-size: 16px;
 }
-button{
+.button-resume{
     background-image: linear-gradient(144deg,#ff9640, #f3c442 50%,#d4eb00);
     border: 0;
     border-radius: 8px;
