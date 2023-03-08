@@ -9,7 +9,7 @@
   }
     *,::before,::after{
         box-sizing: border-box;
-        font-family: 'Poppins';
+        /*font-family: 'Poppins';*/
         text-decoration: none;
         color: #000;
     }
@@ -53,24 +53,25 @@ li{
     
     float: left;
 }
-a{
+/*a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
     font-family: var(--body-font);
 
-}
+}*/
 /*navigation bar*/
 .nav-item{
   
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 400;
+    font-weight: 200;
     
 }
 #nav-menu a {
-  
-    text-decoration: none; /* Remove underlines from links */
+   font-size: 16px;
+   font-family: var(--body-font);
+     text-decoration: none;/* Remove underlines from links */
     color: black; /* Set the text color of links */
     padding: 14px 16px; /* Add padding to links */
     
@@ -154,15 +155,12 @@ section{
 }
 /*social media*/
 
-.fa {
-   
-    font-size: 16px;
+#github,#linkedin{
+   padding-top: 50px;
     width: 55px;
     text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-  }
+   
+}
   
   .fa:hover {
       opacity: 0.7;
@@ -179,10 +177,14 @@ section{
     padding: 40% 0 20% 0 ;
     position: relative;
     top: 0px; left: 40px;
-    font-size: 48px;
+   
     font-family: var(--body-font);
     
    
+}
+.Intro-text h2{
+    font-size: 48px;
+    font-weight: 800;
 }
 
 @media screen and (min-width:h768px){
@@ -217,16 +219,14 @@ section{
     font-weight: 800;
    
 }
-#text-1{
-    font-weight: 800;
-}
 
-#btn1{
+
+.button-resume button{
     padding: 2px 0;
-    margin-top: 25px;
-    font-size: 16px;
+    margin-top: 50px;
+    font-size: 15px;
 }
-.button-resume{
+.button-resume button{
     background-image: linear-gradient(144deg,#ff9640, #f3c442 50%,#d4eb00);
     border: 0;
     border-radius: 8px;
@@ -265,7 +265,7 @@ button:active,button:hover{
 button:hover span{
     background:none;
 }
-@media scree and (min-width:768px) {
+@media screen and (min-width:768px) {
     .button{
         font-size: 24px;
         min-width: 50px;
@@ -279,18 +279,31 @@ button:hover span{
     padding-top: 5px;
 }
 .about-container{
+    width: 80%;
+    margin: 0;
     row-gap: 2rem;
     text-align: center;
 }
-.about-title{
+.about-container p{
+    text-align: justify;
+  padding: 20px 20px 20px 120px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: var(--body-font);
+  
+    
+}
+.about-section h2{
     position: relative;
     
-    margin-bottom: 32px;
-    text-align: center;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-left: 35%;
     color: #876815;
     font-size: 36px;
     font-weight: bold;
-    text-decoration: underline;
+   
+    text-transform: uppercase;
     cursor: pointer;
     
 
@@ -303,39 +316,39 @@ button:hover span{
     
 }
 .about-img{
+    padding-top: 20px;
+    padding-left: 10px;
     justify-self: center;
 }
 .about-img{
     cursor: pointer;
 }
 
-.about-img:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: 1s ease;
 
-}
 
 /*skill section*/
 .skill-container {
-    background-color: #EC9704;
+    background-color: #ffdd1a;
     text-align-last: center;
+    padding: 0;
 }
 .skill-container h3{
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
     color: #000;
     font-weight: 500;
 }
 table{
-    width: 70%;
-    background-color: #EC9704;
-    margin-top: 40px;
+    width: 60%;
+    
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     transition: width 2s, height 2s;
     transition-timing-function: linear;
+    border: #000 solid 3px;
+    
+
 }
 h3{
     margin-top: 20px;
@@ -359,7 +372,7 @@ td{
     text-align: center;
     vertical-align: middle;
     height: 40px;
-
+    
 }
 .skill-container:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);;
