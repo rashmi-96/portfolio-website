@@ -61,6 +61,35 @@ window.addEventListener("scroll", () =>{
 
   /*project*/
   animation.reveal(".project-title",{});
+
+  /*validation form*/
+
+ const fname = document.getElementById('name');
+ const email = document.getElementById('mail');
+ const message= document.getElementById('message');
+ const submit= document.getElementsByClassName('form-submit')[0];
+
+ submit.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    console.log("clicked");
+ })
+ 
+
+
+ /* function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "amarathungayashodha@gmail.com",
+        Password : "09706B794335BD1E386CDA2A8CC724D41FDE",
+        To : 'rashmi.123yashodha@gmail.com',
+        From : document.getElementById("mail").value,
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+}*/
+
   
 
  

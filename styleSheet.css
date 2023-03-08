@@ -8,12 +8,14 @@
   }
     *,::before,::after{
         box-sizing: border-box;
-        /*font-family: 'Poppins';*/
-       text-decoration: none;
+        font-family: 'Poppins';
+        text-decoration: none;
         color: #000;
-       
-    
     }
+
+textarea#message {
+    /* resize: auto; */
+}
 html{
     scroll-behavior: smooth;
 }
@@ -495,7 +497,7 @@ input[type=text]{
 }
 /*Media Quaries*/
 
-@media screen and (max-width:768px){
+@media screen and (max-width:600px){
     body{
         margin: 0;
         height: auto;
@@ -569,6 +571,10 @@ input[type=text]{
         display: block;
         font-size: 11px;
         padding: 5px 15px;
+    }
+    .contact-form{
+        margin: 0;
+        height: auto;
     }
 
 }
