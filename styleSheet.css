@@ -9,14 +9,12 @@
   }
     *,::before,::after{
         box-sizing: border-box;
-        /* font-family: 'Poppins'; */
+        font-family: 'Poppins';
         text-decoration: none;
         color: #000;
     }
 
-textarea#message {
-    /* resize: auto; */
-}
+
 html{
     scroll-behavior: smooth;
 }
@@ -188,16 +186,6 @@ section{
     }
     
 }
-/*@media (min-width:796px) {
-    .my-img{
-        object-fit: cover;
-        margin-left: 40%;
-        grid-area: my-img;
-        max-width: 100%;
-        width: 300%;
-        height: auto;
-    
-}*/
 
  
 #text-1{
@@ -218,14 +206,11 @@ section{
     line-height: 4rem;
     
 }
-h2, .h2 {
-    font-size: 35px;
-    font-weight: 800;
-    line-height: 5rem;
-}
+
 .title-color{
     color: #e8f407;
     font-weight: 800;
+   
 }
 #text-1{
     font-weight: 800;
