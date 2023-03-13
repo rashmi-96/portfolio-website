@@ -327,56 +327,41 @@ button:hover span{
 
 
 /*skill section*/
+.skills{
+    margin: 20px;
+}
+.skills h2{
+    text-align: justify;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    
+}
 .skill-container {
-    background-color: #ffdd1a;
-    text-align-last: center;
-    padding: 0;
-}
-.skill-container h3{
-    font-size: 30px;
-    font-style: italic;
-    color: #000;
-    font-weight: 500;
-}
-table{
-    width: 60%;
-    
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s, height 2s;
-    transition-timing-function: linear;
-    border: #000 solid 3px;
-    
+  
+display: flex;
+flex-wrap: wrap;
+
 
 }
-h3{
-    margin-top: 20px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    font-style: italic;
-    color: #EC9704;
-    cursor: pointer;
+.box-1{
+    box-sizing: border-box;
+    width: 150px;
+    border: #000 solid 1px;
+    padding-left: 5px;
+    background-color: #e2c405;
+    justify-content: center;
 }
-th{
-    font-size: 18px;
-    color: #000;
-    text-align: center;
-    vertical-align: middle;
-    height: 50px;
+.box-2{
+    box-sizing: border-box;
+    width: 150px;
+    border: #000 solid 1px;
+   
+    background-color: #f3c442;
+    justify-content: center;
 }
-td{
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-    vertical-align: middle;
-    height: 40px;
-    
-}
-.skill-container:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);;
-}
+
+
+
 
 /*project*/
 .project-section{
@@ -460,39 +445,41 @@ td{
     
   }
   /*contact form*/
- .contact-form{
+  .contact-form{
+    background: rgba(243,196,66,0.2)
     
-    background-color: #f3c442;
-    
-}
-input[type=text]{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid #fff;
-}
-
+  }
 .form{
-    width: 40%;
-}
-
-.input-submit{
-    /*width: 30%;*/
+    padding:20px;
+    padding-left: 0;
    
+}
+.form .form-input{
+    padding-bottom: 20px;
+    
+}
+.form label{
+    display: block;
+}
+.form input[type="text"], .form input[type="email"], .form textarea{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+}
+.form-input[type="text"]:hover{
+    box-shadow: 0px 5px 8px rgba(149, 143, 143, 0.1);
+}
+.form button{
     background-color: #f3c442;
-    margin-top: 12px;
-    padding: 12px 20px;
-    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    width: 150px;
+    padding: 15px;
+    border: none;
     cursor: pointer;
-
 }
 
-.input-submit:hover{
-    border: #fff;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);;
-}
 @media screen and (max-width:768px) {
     .contact-form{
         max-width: 50%;

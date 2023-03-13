@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,400;1,200;1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet"> -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
+    
   <!--Load Bootstrap css-->
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
   <!--load font awesome-->
@@ -101,41 +102,29 @@
 
       </div>
     </div>
-
-    
-    <div class="skill-container">
-      <h3>Skills</h3>
-      <table >
-        <tr>
-          <th>Development</th>
-          <th>Tools</th>
-        </tr>
-        <tr>
-          <td>HTML5</td>
-          <td>Visual Studio Code</td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>Intelij IDE</td>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>MYSQL workbench</td>
-        </tr>
-        <tr>
-          <td>Java</td>
+    <div class="skills">
+      <h3>My Skills</h3>
+      <div class="skill-container">
+      
+        <div class="box-1">
+          <h4 style="font-family: 'Courier New', Courier, monospace;font-size: 20px; font-weight: 700;">Development</h4>
+          <p>Java</p>
+          <p>HTNL5</p>
+          <p>CSS</p>
+          <p>javascript</p>
+          <p>SQL</p>
+        </div>
+          <div class="box-2">
+          <h4 style="font-family: 'Courier New', Courier, monospace;font-size: 20px; font-weight: 700;">Tools</h4>
+          <p>VS Code</p>
+          <p>Intelij IDE</p>
+          <p>MYSQL Workbench</p>
         
-        </tr>
-        <tr>
-          <td>Object-Oriented-Programming</td>
-          
-        </tr>
-        <tr>
-          <td>SQL</td>
-          
-        </tr>
-      </table>
+        </div>
+
+      </div>
     </div>
+
   </section>
   
 
@@ -161,7 +150,8 @@
             <div class="project-btns">
               <a href="#" target="_blank" class="small-btn button"><i class="fa fa-github" id="github-button"></i></a>
 
-              <a href="#" target="_blank" class="small-btn button" id="casestudy">Case Study</a>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modelId">Case Study</button>
+
             </div>
           </div>
 
@@ -222,24 +212,41 @@
                 </div>
               </div>
   </section>
-  <!--contact form-->
-  <section class="contact-form" id="contact">
-    <h3 class="contact-title">Contact Me</h3>
-    <div class="form">
-      <form  action="#" class="form-submit">  
-        <label class="input-label" for="Name">Name</label>
-        <input class="input" type="text" id="name" placeholder="Enter Name">
-
-        <label class="input-label" for="E-mail">E-mail</label>
-        <input class="input" type="text" id="mail" placeholder="Enter E-mail">
-
-        <label class="input-label" for="Message">Message</label>
-        <textarea  name="input" id="message" cols="80" rows="5" placeholder="Your message.."></textarea>
-
-       <button id="send-btn" type="submit" >Send</button>
-      </form>
+  <!-- popup window -->
+ <div class="popup-container">
+    <div class="model fade" id="modelId">
+      <div class="model-dialog model sm">
+        <div class="model-content">
+          <div class="model-header"></div>
+            <h3 class="model-title">Obstacle Avoiding Line following robot</h3>
+            <button class="close-button">&times;</button>
+          <div class="model-body"></div>
+            <img src="pictures/project-1-i .png">
+          <div class="model-footer"></div>
+        </div>
+      </div>
     </div>
+ </div>
 
+  <!--contact form-->
+
+<section class="contact-form">
+  <div class="form" id="form">
+    <div class="form-input">
+      <label>Name</label>
+      <input type="text" name="name" required>
+    </div>
+    <div class="form-input">
+      <label>Email</label>
+      <input type="email" name="name" required>
+    </div>
+    <div class="form-input">
+      <label>Message</label>
+      <textarea name="Message"></textarea>
+    </div>
+    <button type="submit" value="submit">Submit</button>
+  </div>
+</section>
   </section>
   <!--Footer-->
   <footer class="footer-section" id="footer">
@@ -252,6 +259,8 @@
 <!--script file-->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
  
   </script>
 </body>
