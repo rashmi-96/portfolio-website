@@ -293,13 +293,15 @@ button:hover span{
 }
 .about-text button{
     background: #f3c442;
-    color: #000;
-    text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 30px;
     transition: .4s;
+}
+.about-text button a{
+    text-decoration: none;
+    color: #000;
 }
 .about-text button:hover{
     background: transparent;
