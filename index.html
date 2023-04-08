@@ -20,6 +20,15 @@
   <!--scroll reveal-->
   <script src="https://unpkg.com/scrollreveal"></script>
 
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+      (function(){
+        emailjs.init("50JNQxcmG4F0LpMzU");
+      })();
+  </script>
+
 <body>
   <header id="headerID">
       <nav class="nav-bar">
@@ -187,17 +196,17 @@
   <div class="form" id="form">
     <div class="form-input">
       <label>Name</label>
-      <input type="text" name="name" required>
+      <input type="text" name="name" id="name" required>
     </div>
     <div class="form-input">
       <label>Email</label>
-      <input type="email" name="name" required>
+      <input type="email" name="name" id="email" required>
     </div>
     <div class="form-input">
       <label>Message</label>
-      <textarea name="Message"></textarea>
+      <textarea name="Message" id="message"></textarea>
     </div>
-    <button type="submit" value="submit">Submit</button>
+    <button type="submit" value="submit" onclick="sendEmails()">Submit</button>
   </div>
 </section>
   </section>

@@ -62,33 +62,32 @@ window.addEventListener("scroll", () =>{
   /*project*/
   animation.reveal(".project-title",{});
 
-  /*validation form*/
+  
+//send emails//
+function sendEmails(){
+    var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+    }
 
- const fname = document.getElementById('name');
- const email = document.getElementById('mail');
- const message= document.getElementById('message');
- const submit= document.getElementsByClassName('form-submit')[0];
+    const serviceId = "service_jxzn4xy";
+    const templateId = "template_oksmwdw";
 
- submit.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    console.log("clicked");
- })
- 
+    emailjs.send(serviceId,templateId,params)
+    .then(
+        res => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            alert("Your message sent successfully! Thank you for your response..");
+        }
+    )
+    .catch((err) => console.log(err));
+}
 
 
- /* function sendEmail(){
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "amarathungayashodha@gmail.com",
-        Password : "09706B794335BD1E386CDA2A8CC724D41FDE",
-        To : 'rashmi.123yashodha@gmail.com',
-        From : document.getElementById("mail").value,
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-        message => alert(message)
-    );
-}*/
 
   
 
