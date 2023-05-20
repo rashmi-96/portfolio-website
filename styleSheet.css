@@ -491,44 +491,13 @@ button:hover span{
     
   }
   /*contact form*/
-  .contact-form{
-    background: rgba(243,196,66,0.2)
-    
+ #icon{
+    color: #f3c442;
   }
-.form{
-    padding:20px;
-    padding-left: 0;
-    font-size: 16px;
-    font-weight: 100;
-   
-}
-.form .form-input{
-    padding-bottom: 20px;
-    
-    
-}
-.form label{
-    display: block;
-}
-.form input[type="text"], .form input[type="email"], .form textarea{
-    padding: 15px;
-    width: 100%;
-    border: none;
-    
-    border-radius: 7px;
-}
-.form-input[type="text"]:hover{
-    box-shadow: 0px 5px 8px rgba(149, 143, 143, 0.1);
-}
-.form button{
-    
-    
-    font-size: 16px;
-    width: 150px;
-    padding: 15px;
-   
-    cursor: pointer;
-}
+ .container-lg .form-control:focus{
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgb(255, 193, 7, 0.938);
+ }
 
 
 @media screen and (max-width:768px) {

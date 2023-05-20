@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styleSheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -214,24 +215,60 @@
 
   <!--contact form-->
 
-<section class="contact-form" id="contact">
-  <div class="form" id="form">
-    <div class="form-input">
-      <label>Name</label>
-      <input type="text" name="name" id="name" required>
+<section id="contact" style="padding: 50px;" class="bg-light" >
+  <div class="container-lg">
+    <div class="text-center">
+      <h2 style="font-size: 3rem;">Get in touch</h2>
+      <p class="lead" style="font-size: 2rem;">Fill the form to contact me directly</p>
     </div>
-    <div class="form-input">
-      <label>Email</label>
-      <input type="email" name="name" id="email" required>
+
+    <div class="row justify-content-center my-6">
+      <div class="col-lg-6">
+        <form id="contact-form" >
+          <label for="email" class="form-label" style="font-size: 1.5rem;">Email Address</label>
+          <div class="mb-4 input-group">
+            <span class="input-group-text">
+              <i id="icon" class="bi bi-envelope-fill"></i>
+            </span>
+            <input type="email" class="form-control border border-warning" id="email" placeholder="abc@gmail.com" style="font-size: 1.7rem;">
+            <!--tooltip-->
+            <span class="input-group-text">
+              <span class="tt" data-bs-placement="top" title="enter an email address">
+                  <i class="bi bi-question-circle-fill text-muted"></i>
+              </span>
+              
+          </span>
+          </div>
+
+          <label for="name" class="form-label" style="font-size: 1.5rem;">Name</label>
+          <div class="mb-4 input-group">
+            <span class="input-group-text">
+              <i class="bi bi-person-fill"></i>
+            </span>
+            <input type="text" class="form-control border border-warning" id="name" placeholder="Name" style="font-size: 1.7rem;">
+            <!--tooltip-->
+            <span class="input-group-text">
+              <span class="tt" data-bs-placement="top" title="enter a name">
+                  <i class="bi bi-question-circle-fill"></i>
+              </span>
+              
+            </span>
+          </div>
+         
+          <div class="form-floating pt-1 mb-4 mt-5">
+            <textarea class="form-control border border-warning" id="message" style="height: 140px;" style="font-size: 1.7rem;" ></textarea>
+            <label for="message" style="font-size: 1.7rem;">Your Message</label>
+          </div>
+          <div class="mb-5 text-center">
+            <button type="submit" class="btn btn-outline-warning btn-lg" value="submit" onclick="sendEmails()" style="width: 88px; height: 40px; font-size: 18px;">Send</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="form-input">
-      <label>Message</label>
-      <textarea name="Message" id="message"></textarea>
-    </div>
-    <button class="btn btn-outline-warning btn-lg" type="submit" value="submit" onclick="sendEmails()">Send</button>
   </div>
 </section>
-  </section>
+ 
+
   <!--Footer-->
   <footer class="footer-section" id="footer">
     <div class="footer-p">
@@ -243,10 +280,17 @@
 <!--script file-->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  
   <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
   </script>
+  <script> //using this we can add tooltips for anywhare in the website and tooltips class should be always "tt" as we create class
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t =>{
+        new bootstrap.Tooltip(t)
+    })
+</script>
 </body>
 </html>
