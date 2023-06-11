@@ -313,8 +313,8 @@ button:hover span{
     justify-content: space-around;
 }
 .about-text h2{
-    color: #ff9640;
-    text-transform: capitalize;
+    color: #22222222;
+    text-transform: uppercase;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -410,8 +410,80 @@ button:hover span{
     background-color: #876815;
 }
 
+
+
 /*project*/
-.project-section{
+
+#project a{
+    text-decoration: none;
+}
+#project ul{
+    list-style: none;
+}
+
+#project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+.project-heading{
+    margin-top:20px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-heading h2{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+    color: #22222222;
+}
+.project-heading span{
+    color: #ffc107;
+    font-size: 14px;
+}
+
+.project-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid rgba(237, 237, 237, 0.6);*/
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+.project-filter li{
+    margin: 10px;
+    padding: 5px 20px;
+    color: #000;
+    font-size: 2rem;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.project-filter-active{
+   
+    color: #000;
+    background-color: #f3c442;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/*.project-section{
     margin: 20px;
 }
 .project-container{
@@ -490,6 +562,23 @@ button:hover span{
     background-color:#fff;
     border:2px solid #f3c442;
     
+  }*/
+
+  .project-section .tabs{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+
+  .tabs button{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
   }
   /*contact form*/
  #icon{

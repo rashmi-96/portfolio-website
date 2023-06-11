@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-   
+   <link rel="stylesheet" href="style-projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
   <!--Load Bootstrap css-->
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -119,7 +121,101 @@
 
 
   <!--portfolio section-->
-  <section class="project-section" id="projects">
+
+  <section id="project">
+    <div class="project-heading">
+       <!-- <span>Let's look at my work</span> -->
+      <h2>My Projects</h2>
+    </div>
+    
+    <!--project filter-->
+    <ul class="project-filter">
+      <li class="list project-filter-active" data-filter="all" >All</li>
+      <li class="list" data-filter="app">Application</li>
+      <li class="list" data-filter="design">UI Designs</li>
+      <li class="list" data-filter="ai">Robot and IOT</li>
+
+    </ul>
+
+    <div class="project-container">
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 ai">
+            <img src="pictures/project-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-3">Obstacle Avoiding Line Folllowing Robot</h5>
+              <p class="card-text fs-4">Line following robot which intelligently detects obstacles in 
+                its path. Also, it is a self-navigated autonomous robot.</p>
+                <a href="https://github.com/rashmi-96/obstacle-avoiding-line-following-robot" class="btn btn-outline-warning btn-lg"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 app">
+            <img src="pictures/project-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-3">Hands For Smile charity website</h5>
+              <p class="card-text fs-4">The cloud base Saas web application
+                has multiple functions<br/>
+                This application was implemented for a
+                charity organization</p>
+              <a href="https://github.com/rashmi-96/hands-for-smile-website" class="btn btn-outline-warning btn-lg"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 ai">
+            <img src="pictures/home.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-3">Smart Home System</h5>
+              <p class="card-text fs-4">The smart home automation system which has
+                motion detected light, motiondetected roller door,
+                security system, temperature, and automation light <br/>
+                These features are controlled by mobile application.</p>
+              <a href="#" class="btn btn-outline-warning btn-lg"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 app">
+            <img src="pictures/project-4.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-3">Employee Management web Application</h5>
+              <p class="card-text fs-4">The web application that enables users
+                to create, store and manage Employee
+                Records</p>
+              <a href="https://github.com/rashmi-96/Falcons_employee_mangement_react-app-main/tree/master/Falcons_employee_mangement_react-app-main" class="btn btn-outline-warning btn-lg"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 design">
+            <img src="pictures/UI-1.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-3">Pluralsight login page clone</h5>
+              <p class="card-text fs-4"></p>
+              <a href="#" class="btn btn-outline-warning btn-lg"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 design">
+            <img src="pictures/UI-2-i.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-3">Sample Landing Page</h5>
+              <p class="card-text fs-4"> </p>
+              <a href="#" class="btn btn-outline-warning btn-lg"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--<section class="project-section" id="projects">
     <h2 class="project-title">Projects</h2>
         <div class="project-container" >
           <div class="project-img">
@@ -196,7 +292,7 @@
                   </div>
                 </div>
               </div>
-  </section>
+  </section>-->
   <!-- popup window -->
  <!--<div class="popup-container">
     <div class="model fade" id="modelId">
@@ -284,6 +380,8 @@
 <!--script file-->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   
   <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>-->
@@ -296,5 +394,31 @@
         new bootstrap.Tooltip(t)
     })
 </script>
+
+<script type="text/javascript">
+  $(document).on('click', '.project-filter li', function(){
+    $(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
+  });
+</script>
+
+<!-- funtion to filter projects -->
+<script>
+  $(document).ready(function(){
+    $('.list').click(function(){
+      const value = $(this).attr('data-filter')
+      if(value== 'all'){
+        $('.card').show('1000');
+      }
+      else{
+        $('.card').not('.'+value).hide('1000');
+        $('.card').filter('.'+value).show('1000');
+      }
+    });
+  });
+
+  
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

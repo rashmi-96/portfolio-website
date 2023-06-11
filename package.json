@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myJS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rashmi-96/portfolio-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rashmi-96/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/rashmi-96/portfolio-website#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
