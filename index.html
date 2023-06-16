@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=divce-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rashmi Amarathunga Portfolio</title>
+    <link rel="icon" type="image/png" sizes="16x16"  href="pictures/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" type="text/css" href="styleSheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,14 +44,18 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#project">Portfolio</a></li>
           <li><a href="#contact">Conatact</a></li>
-          <a href="javascript:void(0);" class="toggle-icon" onclick="toggleMenu"><i class="fas fa-bars"></i></a>
+
+          <div> 
+            <a href="javascript:void(0);" class="toggle-icon" onclick="toggleMenu">
+              <i class="fa-solid fa-bars"></i></a>
+          </div>
+         
           <!--<li><a href="#">Home</a></li>-->
         </ul>
       </nav>
-      
-
 
   </header>  
   <!--Home-->
@@ -83,7 +90,7 @@
     <div class="main">
       <img src="pictures/profile.png" style="width: 300px; height: 250px;">
        <div class="about-text">
-        <h2>About me</h2>
+        <h2>About <span>me</span></h2>
         <p>Hello and welcome to my portfolio website! My name is Rashmi Amarathunga, 
           and I'm a 4th year undergraduate student majoring in software engineering. 
           I have a passion for developing software applications and systems that are both functional and user-friendly.
@@ -117,94 +124,83 @@
     </div> --> 
   </section>
 
-  <section class="skill-container">
-    <div class="title">
-      <h2>Skills</h2>
+  <div class="skills_section" id="skill">
+    <div class="skills_head">
+        <h2>My Skills</h2>
+        <p>A dynamic blend of technical prowess, creative problem-solving, and adaptability, 
+          forms the bedrock of my skill set and propels me towards excellence in my professional pursuits.
+    </p>
     </div>
-    <p>A dynamic blend of technical prowess, creative problem-solving, and adaptability, 
-      forms the bedrock of my skill set and propels me towards excellence in my professional pursuits.</p>
-      <div class="row">
-        <div class="item">
-          <div class="item-text">
-            <span>HTML5</span>
-            <span class = "w-90">90%</span>
-          </div>
-          <div class="progress" >
-            <div class = "progress-bar w-90 bg-warning"></div>
-          </div>
-        </div>
 
-        <div class="item">
-          <div class="item-text">
-            <span>CSS3</span>
-            <span class = "w-70">70%</span>
-          </div>
-          <div class="progress" >
-            <div class = "progress-bar w-70 bg-warning"></div>
-          </div>
+    <div class="skills_main">
+        <div class="skill_bar">
+            <div class="info">
+                <p>HTML5</p>
+                <P>90%</P>
+            </div>
+            <div class="bar">
+                <span class="html"></span>
+            </div>
         </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>CSS</p>
+                <P>70%</P>
+            </div>
+            <div class="bar">
+                <span class="css"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>SASS</p>
+                <P>40%</P>
+            </div>
+            <div class="bar">
+                <span class="sass"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>JavaScript</p>
+                <P>50%</P>
+            </div>
+            <div class="bar">
+                <span class="js"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>Bootstrap 5</p>
+                <P>75%</P>
+            </div>
+            <div class="bar">
+                <span class="bootstrap"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>Java</p>
+                <P>70%</P>
+            </div>
+            <div class="bar">
+                <span class="java"></span>
+            </div>
+        </div>
+        <div class="skill_bar">
+            <div class="info">
+                <p>SQL</p>
+                <P>65%</P>
+            </div>
+            <div class="bar">
+                <span class="sql"></span>
+            </div>
+        </div>
+        
+    </div>
+  </div>
 
-        <div class="item">
-          <div class="item-text">
-            <span>javascript</span>
-            <span class = "w-50">50%</span>
-          </div>
-          <div class="progress" >
-            <div class = "progress-bar w-50 bg-warning"></div>
-          </div>
-        </div>
 
-        <div class="item">
-          <div class="item-text">
-            <span>Boostrap 5</span>
-            <span class = "w-50">50%</span>
-          </div>
-          <div class="progress">
-            <div class="progress-bar w-70 bg-warning "></div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-text">
-            <span>Sass</span>
-            <span class = "w-50">40%</span>
-          </div>
-          <div class="progress">
-            <div class="progress-bar w-40 bg-warning"></div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-text">
-            <span>Java</span>
-            <span class = "w-60">60%</span>
-          </div>
-          <div class="progress">
-            <div class="progress-bar w-60 bg-warning" ></div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-text">
-            <span>SQL</span>
-            <span class ="w-65">65%</span>
-          </div>
-          <div class="progress">
-            <div class="progress-bar w-65 bg-warning" ></div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-text">
-            <span>SQL</span>
-            <span class ="w-65">65%</span>
-          </div>
-          <div class="progress">
-            <div class="progress-bar w-65 bg-warning" ></div>
-          </div>
-        </div>
-      </div>
-  </section>
 
   
   
@@ -215,7 +211,7 @@
   <section id="project">
     <div class="project-heading">
        <!-- <span>Let's look at my work</span> -->
-      <h2>My Projects</h2>
+      <h2>My <span>Projects</span></h2>
     </div>
     
     <!--project filter-->
